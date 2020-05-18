@@ -94,7 +94,7 @@ async def month_statistics(message: types.Message):
 
 
 @dp.message_handler(commands=['month_graph'])
-async def month_statistics(message: types.Message):
+async def month_statistics_grph(message: types.Message):
     usr_id=int(message.from_user.id)
     answer_message = expenses.get_month_statistics(usr_id)
     if not answer_message:
