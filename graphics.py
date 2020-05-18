@@ -12,8 +12,8 @@ def month_graph(vals,labels):
 	ax.pie(vals, autopct=lambda pct: func(pct, vals),explode=explode,wedgeprops={'edgecolor': 'black'},
 	                                  colors=colors,textprops={'fontsize': 12},shadow=True)
 	ax.legend(labels,loc='upper left', bbox_to_anchor=(0.9, 0.92),prop={'size':18},)
-	plt.savefig(r'C:\Users\dmitriy.khoroshenkiy\Desktop\cs\bablo_bot\fig\curr_month.png', bbox_inches='tight')
-	return(r'C:\Users\dmitriy.khoroshenkiy\Desktop\cs\bablo_bot\fig\curr_month.png')
+	plt.savefig('curr_month.png', bbox_inches='tight')
+	return('curr_month.png')
 
 def month_graph_by_day(dt,vals):
 	import numpy as np
@@ -38,5 +38,5 @@ def month_graph_by_day(dt,vals):
 	                '{}'.format(height), ha=ha[xpos], va='bottom')
 
 	autolabel(rects1, "center")
-	plt.savefig(r'C:\Users\dmitriy.khoroshenkiy\Desktop\cs\bablo_bot\fig\curr_month_by_day.png', bbox_inches='tight')
-	return(r'C:\Users\dmitriy.khoroshenkiy\Desktop\cs\bablo_bot\fig\curr_month_by_day.png')
+	plt.savefig('curr_month_by_day.png', bbox_inches='tight')
+	return('curr_month_by_day.png')
