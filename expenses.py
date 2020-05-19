@@ -6,7 +6,6 @@ from typing import List, NamedTuple, Optional
 import pytz
 
 import db
-import exceptions
 from categories import Categories
 
 
