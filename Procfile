@@ -1,1 +1,1 @@
-web:python bablo_bot.py
+worker:python3 bablo_bot.py
