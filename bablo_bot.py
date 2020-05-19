@@ -1,7 +1,6 @@
 """Сервер Telegram бота, запускаемый непосредственно"""
 #import logging
 import os
-import exceptions
 import expenses
 from categories import Categories
 import  graphics
@@ -12,7 +11,7 @@ from aiogram.utils import executor
 #logging.basicConfig(level=logging.INFO)
 
 TOKEN='1073786035:AAHVEc9fimGKWASp8WJngQFfzEKBWpeFZl8'
-PROXY_URL='http://193.232.150.42:3128'
+PROXY_URL='http://200.73.129.61:3128'
 bot = Bot(token=TOKEN,proxy=PROXY_URL)
 dp = Dispatcher(bot)
 
